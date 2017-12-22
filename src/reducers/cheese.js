@@ -19,7 +19,7 @@ export const fetchCheeseReducer = (state=initialState, action) => {
     }
     else if (action.type === FETCH_CHEESE_SUCCESS) {
         return Object.assign({}, state, {
-            cheeses: action.cheese,
+            cheeses: action.cheeses,
             loading: false,
             error: null
         });

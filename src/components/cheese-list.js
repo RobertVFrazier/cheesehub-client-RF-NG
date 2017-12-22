@@ -19,10 +19,11 @@ export class Cheeses extends React.Component {
     }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = state => {
+    return{
     cheeses: state.cheeses,
     loading: state.loading,
     error: state.error
-});
+}};
 
 export default connect(mapStateToProps)(Cheeses);
